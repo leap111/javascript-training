@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>愛知の観光</title>
+        <meta name="descriptiion" content="ようこそ愛知へ">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="slick/slick.css">
+        <link rel="stylesheet" href="slick/slick-theme.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    </head>
+    <body>
+        <header id="header">
+        <h1>愛知の観光情報</h1>
+        <div class="menu-btn">
+            <span id="fa-link"></span>
+          </div>
+          <div class="menu">
+            <div class="menu__item">TOP</div>
+            <div class="menu__item">ABOUT</div>
+            <div class="menu__item">BLOG</div>
+            <div class="menu__item">CONTACT</div>
+          </div>
+        </header>
+
+        <main>
+            <div class="slideshow">
+                <div><img src="img/1.jpg" alt=""></div>
+                <div><img src="img/2.jpg" alt=""></div>
+                <div><img src="img/3.jpg" alt=""></div>
+            </div>
+            <div class="area">
+             <h2>地域から調べる</h2>
+                <div class="part">
+                <p>Click here↓</p>
+                <button class="areaname">名古屋エリア</button>
+                <ul class="inner">
+                    <li><a href="">名古屋城</a></li>
+                    <li><a href="">名古屋テレビ塔</a></li>
+                    <li><a href="">大須観音</a></li>
+                </ul>
+                <div class="pict"><img src="img/1.jpg" alt=""></div>
+                </div>
+                <div class="part">
+                    <p>Click here↓</p>
+                <button class="areaname">豊橋エリア</button>
+                <ul class="inner">
+                    <li><a href="">豊橋城</a></li>
+                    <li><a href="">豊橋市公会堂</a></li>
+                    <li><a href="">二川宿本陣</a></li>
+                </ul>
+                <div class="pict"><img src="img/2.jpg" alt=""></div>
+                </div>
+            </div>
+           
+            <form id="form" action="program.php" method="post">
+            　<h2>キーワードで調べる</h2>
+                <p>調べたいキーワードを入力してください</p>
+                <textarea id="textarea"　name="textarea" maxlength="10" placeholder="ここに入力"></textarea>
+                <button type="button" value="送信" id="send">送信</button>
+            </form>
+            <div id="videoList">
+
+            </div>
+        </main>
+        <footer>
+            
+        </footer>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

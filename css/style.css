@@ -1,0 +1,494 @@
+@media screen and (min-width: 960px) {
+
+    #header {
+        position:fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        background-color: coral;
+    }
+
+    h1 {
+        margin: 50px;
+        color: #364e96;
+        padding: 0.5em 0;
+        border-top: solid 3px #364e96;
+        border-bottom: solid 3px #364e96;
+    }
+    
+      
+      
+.menu-btn{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  color: #fff;
+}
+
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #555;
+}
+.menu__item{
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu{
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  transform: translateX(0);
+}
+
+#fa-link::before {
+        content: "\f0c9";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        
+      }
+      
+#fa-link.is-change::before {
+        content: "\f00d";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+}
+
+.slideshow {
+    width: 500px;
+    margin: auto;
+    z-index: -1;
+}
+
+.slideshow img {
+    width: 100%;
+}
+
+h2 {
+    display: inline-block;
+    margin: 30px;
+    border-bottom: solid 1px black;
+}
+
+h3 {
+    margin: 50px 80px 50px 50px;
+}
+
+.areaname {
+    border-radius: 5px;
+}
+
+.inner {
+    display: none;
+    padding: 10px 1em;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.inner > li  {
+    padding: 5px;
+    border: solid 1px black;
+    
+}
+
+
+.pict {
+    width: 30%;
+    margin-left: 300px;
+  
+
+    
+}
+
+.pict img {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    height:1em;
+}
+
+
+#videoList {
+    margin: auto;
+    padding-top: 40px;
+    width: 1216px;
+}
+
+#videoList .video {
+    border: 4px solid #fff;
+    float: left;
+    height: 315px;
+    margin: 20px;
+    width: 560px;
+}
+
+#videoList .video iframe {
+    border: none;
+    height: 315px;
+    width: 560px;
+
+}
+}
+
+@media screen and (min-width: 560px) and (max-width: 960px ) {
+    
+    #header {
+        position:fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        background-color: coral;
+    }
+
+    h1 {
+        margin: 50px;
+        color: #364e96;/*文字色*/
+        padding: 0.5em 0;/*上下の余白*/
+        border-top: solid 3px #364e96;/*上線*/
+        border-bottom: solid 3px #364e96;/*下線*/
+    }
+    
+    .menu-btn{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #333;
+        color: #fff;
+      }
+      
+      /*----------------------------
+      * メニュー本体
+      *----------------------------*/
+      .menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #555;
+      }
+      .menu__item{
+        width: 100%;
+        height: auto;
+        padding: .5em 1em;
+        text-align: center;
+        color: #fff;
+        box-sizing: border-box;
+      }
+      
+      /*----------------------------
+      * アニメーション部分
+      *----------------------------*/
+      
+      /* アニメーション前のメニューの状態 */
+      .menu{
+        transform: translateX(100vw);
+        transition: all .3s linear;
+      }
+      /* アニメーション後のメニューの状態 */
+      .menu.is-active{
+        transform: translateX(0);
+      }
+      
+      #fa-link::before {
+              content: "\f0c9";
+              font-weight: 900;
+              font-family: "Font Awesome 5 Free";
+              
+            }
+            
+      #fa-link.is-change::before {
+              content: "\f00d";
+              font-weight: 900;
+              font-family: "Font Awesome 5 Free";
+      }
+    
+    main {
+        width: 760px;
+        margin: 0 auto;
+    }
+    .slideshow {
+        width: 500px;
+        margin: auto;
+        z-index: -1;
+    }
+    
+    .slideshow img {
+        width: 100%;
+    }
+    
+    h2 {
+        display: inline-block;
+        margin: 30px;
+        border-bottom: solid 1px black;
+    }
+    
+    h3 {
+        margin: 50px 80px 50px 50px;
+    }
+    
+    .areaname {
+        border-radius: 5px;
+    }
+    
+    .inner {
+        display: none;
+        padding: 10px 1em;
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .inner > li  {
+        padding: 5px;
+        border: solid 1px black;
+        
+    }
+    
+    
+    .pict {
+        width: 30%;
+        margin-left: 300px;
+      
+    
+        
+    }
+    
+    .pict img {
+        width: 100%;
+    }
+
+    textarea {
+        resize: none;
+        height:1em;
+    }
+    
+    
+    
+    #videoList {
+        margin: 0 10px;
+        padding-top: 40px;
+        width: 730px;
+    }
+    
+    #videoList .video {
+        border: 4px solid #fff;
+        height: 500px;
+        width: 730px;
+    }
+    
+    #videoList .video iframe {
+        border: none;
+        height: 500px;
+        width: 730px;
+    
+    }
+}
+
+@media screen and (max-width: 559px) {
+    #header {
+        position:fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        background-color: coral;
+    }
+
+    h1 {
+        margin: 50px;
+        color: #364e96;
+        padding: 0.5em 0;
+        border-top: solid 3px #364e96;
+        border-bottom: solid 3px #364e96;
+    }
+    
+      
+      
+.menu-btn{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  color: #fff;
+}
+
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #555;
+}
+.menu__item{
+  width: 100%;
+  height: auto;
+  padding: .5em 1em;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu{
+  transform: translateX(100vw);
+  transition: all .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  transform: translateX(0);
+}
+
+#fa-link::before {
+        content: "\f0c9";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        
+      }
+      
+#fa-link.is-change::before {
+        content: "\f00d";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+}
+    
+      
+
+main {
+        width: 330px;
+        margin:0 auto;
+    }
+    .slideshow {
+        width: 300px;
+        margin: auto;
+        z-index: -1;
+    }
+    
+    .slideshow img {
+        width: 100%;
+    }
+    
+    h2 {
+        display: inline-block;
+        margin: 30px;
+        border-bottom: solid 1px black;
+    }
+    
+    h3 {
+        margin: 50px 80px 50px 50px;
+    }
+    
+    .areaname {
+        border-radius: 5px;
+    }
+    
+    .inner {
+        display: none;
+        padding: 10px 1em;
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+        z-index: ;
+    }
+    
+    .inner > li  {
+        padding: 5px;
+        border: solid 1px black;
+        
+    }
+    
+    
+    .pict {
+        width: 50%;
+        margin-left: ;
+    }
+    
+    .pict img {
+        width: 100%;
+    }
+    
+    textarea {
+        resize: none;
+        height:1em;
+    }
+    
+    #videoList {
+        margin: auto;
+        padding-top: 40px;
+        width: 330px;
+    }
+    
+    
+    #videoList .video iframe {
+        border: none;
+        margin: 20px 0;
+        height: 315px;
+        width: 100%;
+    
+    }
+}
